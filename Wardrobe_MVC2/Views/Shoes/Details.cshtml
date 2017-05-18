@@ -1,0 +1,75 @@
+﻿@model Wardrobe_MVC2.Models.Sho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4 class="dt">Shoes</h4>
+    <hr />
+    <dl class="details">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)<div class="row">
+                <div class="col-md-3">
+                    <div class="pictures">
+                        <img src="~/Content/Wadrobe/soxs.jpg" />
+                        <img src="~/Content/Wadrobe/tights.jpg" />
+                        <img src="~/Content/Wadrobe/bow tie.jpg" />
+                        <img src="~/Content/Wadrobe/book bag.jpg" />
+                    </div>
+                </div>
+            </div>
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Photo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Photo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Season)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Season)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Occassion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Occassion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
